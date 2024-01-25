@@ -22,8 +22,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Exercice03.Core\Exercice03.Core.csproj" />
-  </ItemGroup>
-
 </Project>

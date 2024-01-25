@@ -1,4 +1,4 @@
-﻿namespace Exercice03.Core
+﻿namespace Exercice03
 {
     public class Class1
     {
