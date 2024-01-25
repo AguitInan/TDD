@@ -9,6 +9,19 @@ namespace Exercice02.NUnit
     public class FibTests
     {
         [Test]
+        public void GetFibSeries_WhenCalled_ShouldNotReturnEmptyList()
+        {
+            // Arrange
+            var fib = new Fib(1);
+
+            // Act
+            var result = fib.GetFibSeries();
+
+            // Assert
+            Assert.That(result, Is.Not.Empty);
+        }
+
+        [Test]
         public void GetFibSeries_WhenRangeIs1_ShouldReturnListWithOnlyZero()
         {
             // Arrange
