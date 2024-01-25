@@ -21,7 +21,7 @@ public class RechercheVille
         {
             throw new NotFoundException();
         }
-        return new List<string>();
+        return _villes.Where(ville => ville.StartsWith(mot, StringComparison.OrdinalIgnoreCase)).ToList();
     }
 }
 
