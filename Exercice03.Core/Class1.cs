@@ -1,11 +1,22 @@
-﻿namespace Exercice03.Core
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public class RechercheVille
 {
-    public class RechercheVille
-    {
+   private List<string> _villes;
 
-    }
+   public RechercheVille()
+   {
 
-    public class NotFoundException : Exception
-    {
+   }
+   
+   public List<string> Rechercher(string mot)
+   {
+        return new List<string>();
     }
+}
+
+public class NotFoundException : Exception
+{
 }

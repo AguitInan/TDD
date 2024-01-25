@@ -1,11 +1,14 @@
+using Xunit;
+
 namespace Exercice03.Tests
 {
-    public class UnitTest1
+    public class RechercheVilleTest
     {
         [Fact]
-        public void Test1()
+        public void TestRechercheLongueurMinimale()
         {
-
+            var rechercheVille = new RechercheVille();
+            Assert.Throws<NotFoundException>(() => rechercheVille.Rechercher("a"));
         }
     }
 }
