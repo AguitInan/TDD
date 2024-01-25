@@ -17,6 +17,10 @@ public class RechercheVille
 
     public List<string> Rechercher(string mot)
     {
+        if (mot == "*")
+        {
+            return _villes;
+        }
         if (mot.Length < 2)
         {
             throw new NotFoundException();
