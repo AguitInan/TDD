@@ -14,7 +14,7 @@ namespace Exercice03.Core
             "Paris", "Budapest", "Skopje", "Rotterdam", "Valence",
             "Vancouver", "Amsterdam", "Vienne", "Sydney", "New York",
             "Londres", "Bangkok", "Hong Kong", "Dubaï", "Rome", "Istanbul"
-            };
+        };
         }
 
         public List<string> Rechercher(string mot)
@@ -23,7 +23,8 @@ namespace Exercice03.Core
             {
                 throw new NotFoundException();
             }
-            return _villes.Where(ville => ville.StartsWith(mot, StringComparison.OrdinalIgnoreCase)).ToList();
+            //return _villes.Where(ville => ville.StartsWith(mot, StringComparison.OrdinalIgnoreCase)).ToList();
+            return new List<string>();
         }
     }
 
