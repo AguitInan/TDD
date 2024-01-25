@@ -5,14 +5,14 @@ namespace Exercice03.Tests
     public class RechercheVilleTest
     {
         [Fact]
-        public void TestRechercheLongueurMinimale()
+        public void Rechercher_DonneNotFoundException_SiRechercheTropCourte()
         {
             var rechercheVille = new RechercheVille();
             Assert.Throws<NotFoundException>(() => rechercheVille.Rechercher("a"));
         }
 
         [Fact]
-        public void TestRechercheCorrespondanceExacte()
+        public void Rechercher_RetourneVillesCorrespondantes_PourPartieRecherche()
         {
             var rechercheVille = new RechercheVille();
             var result = rechercheVille.Rechercher("Va");
@@ -23,7 +23,7 @@ namespace Exercice03.Tests
         }
 
         [Fact]
-        public void TestRechercheInsensibleCasse()
+        public void Rechercher_EstInsensibleALaCasse()
         {
             var rechercheVille = new RechercheVille();
             var lowerCaseResult = rechercheVille.Rechercher("valence");
@@ -35,7 +35,7 @@ namespace Exercice03.Tests
         }
 
         [Fact]
-        public void TestRecherchePartielle()
+        public void Rechercher_TrouveVillesAvecCorrespondancePartielle()
         {
             var rechercheVille = new RechercheVille();
             var result = rechercheVille.Rechercher("ape");
@@ -43,7 +43,7 @@ namespace Exercice03.Tests
         }
 
         [Fact]
-        public void TestRechercheAsterisque()
+        public void Rechercher_RetourneToutesLesVilles_PourAsterisque()
         {
             var rechercheVille = new RechercheVille();
             var result = rechercheVille.Rechercher("*");
