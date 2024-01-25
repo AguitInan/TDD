@@ -23,6 +23,18 @@ namespace Exercice03.Tests
         }
 
         [Fact]
+        public void TestRechercheInsensibleCasse()
+        {
+            var rechercheVille = new RechercheVille();
+            var lowerCaseResult = rechercheVille.Rechercher("valence");
+            var upperCaseResult = rechercheVille.Rechercher("VALENCE");
+
+            Assert.Equal(lowerCaseResult.Count, upperCaseResult.Count);
+            Assert.Contains("Valence", lowerCaseResult);
+            Assert.Contains("Valence", upperCaseResult);
+        }
+
+        [Fact]
         public void TestRecherchePartielle()
         {
             var rechercheVille = new RechercheVille();
