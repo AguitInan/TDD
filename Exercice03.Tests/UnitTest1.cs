@@ -19,6 +19,7 @@ namespace Exercice03.Tests
             Assert.Contains("Valence", result);
             Assert.Contains("Vancouver", result);
             Assert.Equal(2, result.Count);
+
         }
     }
 }
