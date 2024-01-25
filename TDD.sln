@@ -7,13 +7,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo01.Bibliotheque", "Demo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo01.Tests", "Demo01.Tests\Demo01.Tests.csproj", "{9797B718-4B4A-4E63-960C-CBA47EE6E9CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo01.TestsNUnit", "Demo01.TestsNUnit\Demo01.TestsNUnit.csproj", "{1A0FAB90-79CA-421D-89C6-088B2B79BE8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo01.TestsNUnit", "Demo01.TestsNUnit\Demo01.TestsNUnit.csproj", "{1A0FAB90-79CA-421D-89C6-088B2B79BE8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo01.TestsXUnit", "Demo01.TestsXUnit\Demo01.TestsXUnit.csproj", "{B0EAB0C8-4564-4A7E-8F91-AFC2B088AE7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo01.TestsXUnit", "Demo01.TestsXUnit\Demo01.TestsXUnit.csproj", "{B0EAB0C8-4564-4A7E-8F91-AFC2B088AE7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice01.Tests", "Exercice01.Tests\Exercice01.Tests.csproj", "{070CA23C-FD29-4BE2-AFEF-01E056D8916D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice01.Tests", "Exercice01.Tests\Exercice01.Tests.csproj", "{070CA23C-FD29-4BE2-AFEF-01E056D8916D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice01.Bibliotheque", "Exercice01.Bibliotheque\Exercice01.Bibliotheque.csproj", "{904A5816-91E4-4824-8516-DF1EEE7222F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercice01.Bibliotheque", "Exercice01.Bibliotheque\Exercice01.Bibliotheque.csproj", "{904A5816-91E4-4824-8516-DF1EEE7222F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice02.Core", "Exercice02.Core\Exercice02.Core.csproj", "{EDAE1ACD-0E5E-4F17-A367-C1942699F444}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice02.NUnit", "Exercice02.NUnit\Exercice02.NUnit.csproj", "{A2F387EE-0FE3-4330-A885-5744C978CFE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{904A5816-91E4-4824-8516-DF1EEE7222F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{904A5816-91E4-4824-8516-DF1EEE7222F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{904A5816-91E4-4824-8516-DF1EEE7222F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDAE1ACD-0E5E-4F17-A367-C1942699F444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAE1ACD-0E5E-4F17-A367-C1942699F444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDAE1ACD-0E5E-4F17-A367-C1942699F444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDAE1ACD-0E5E-4F17-A367-C1942699F444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2F387EE-0FE3-4330-A885-5744C978CFE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2F387EE-0FE3-4330-A885-5744C978CFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2F387EE-0FE3-4330-A885-5744C978CFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2F387EE-0FE3-4330-A885-5744C978CFE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
