@@ -41,5 +41,13 @@ namespace Exercice03.Tests
             var result = rechercheVille.Rechercher("ape");
             Assert.Contains("Budapest", result);
         }
+
+        [Fact]
+        public void TestRechercheAsterisque()
+        {
+            var rechercheVille = new RechercheVille();
+            var result = rechercheVille.Rechercher("*");
+            Assert.Equal(rechercheVille._villes.Count, result.Count);
+        }
     }
 }

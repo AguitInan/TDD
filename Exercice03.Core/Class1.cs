@@ -4,7 +4,7 @@ using System.Linq;
 
 public class RechercheVille
 {
-   private List<string> _villes;
+   public List<string> _villes;
 
     public RechercheVille()
     {
