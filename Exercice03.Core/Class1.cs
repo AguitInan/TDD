@@ -1,7 +1,11 @@
 ﻿namespace Exercice03.Core
 {
-    public class Class1
+    public class RechercheVille
     {
 
+    }
+
+    public class NotFoundException : Exception
+    {
     }
 }
