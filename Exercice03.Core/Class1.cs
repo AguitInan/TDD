@@ -21,7 +21,7 @@ public class RechercheVille
         {
             throw new NotFoundException();
         }
-        return _villes.Where(ville => ville.Contains(mot)).ToList();
+        return _villes.Where(ville => ville.ToLower().Contains(mot.ToLower())).ToList();
     }
 }
 
