@@ -10,5 +10,15 @@ namespace Exercice03.Tests
             var rechercheVille = new RechercheVille();
             Assert.Throws<NotFoundException>(() => rechercheVille.Rechercher("a"));
         }
+
+        [Fact]
+        public void TestRechercheCorrespondanceExacte()
+        {
+            var rechercheVille = new RechercheVille();
+            var result = rechercheVille.Rechercher("Va");
+            Assert.Contains("Valence", result);
+            Assert.Contains("Vancouver", result);
+            Assert.Equal(2, result.Count);
+        }
     }
 }
