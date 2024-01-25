@@ -21,5 +21,13 @@ namespace Exercice03.Tests
             Assert.Equal(2, result.Count);
 
         }
+
+        [Fact]
+        public void TestRecherchePartielle()
+        {
+            var rechercheVille = new RechercheVille();
+            var result = rechercheVille.Rechercher("ape");
+            Assert.Contains("Budapest", result);
+        }
     }
 }
